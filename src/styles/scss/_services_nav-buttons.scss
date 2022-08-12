@@ -1,0 +1,53 @@
+// Services Nav Buttons
+
+.buttons-wrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+  background-color: #fbfbfb;
+
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+
+    // Tablet media css
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    // Mobile media css
+    @media screen and (max-width: 767px) {
+    }
+
+    a {
+      text-transform: uppercase;
+      background-color: #fff;
+      color: #878686;
+      text-decoration: none;
+      text-align: center;
+      border: 1px solid #e4e4e4;
+      max-width: 299px;
+      width: 100%;
+      margin-top: 29px;
+      padding-top: 24px;
+      padding-bottom: 23px;
+
+      // Tablet media css
+      @media screen and (max-width: 1024px) {
+        max-width: unset;
+        width: 100%;
+      }
+
+      // Mobile media css
+      @media screen and (max-width: 767px) {
+      }
+
+      &:hover {
+        border: 1px solid #f55d23;
+        box-shadow: 0 0 35px 0 rgba($color: #000000, $alpha: 0.22);
+      }
+    }
+  }
+}

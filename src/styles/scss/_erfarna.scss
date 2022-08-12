@@ -1,0 +1,108 @@
+// Eerfarna css
+
+.erfarna {
+  max-width: 1170px;
+  margin: auto;
+  width: 100%;
+
+  @media screen and (min-width: 1025px) and (max-width: 1200px) {
+    padding-left: 30px;
+  }
+
+  margin: auto;
+  position: relative;
+
+  .content-wrapper2 {
+    display: flex;
+    margin: auto;
+
+    //Tablet media scss
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
+
+    //Mobile media scss
+    @media screen and (max-width: 767px) {
+    }
+    .text-wrapper2 {
+      max-width: 570px;
+      width: 100%;
+
+      //Tablet media scss
+      @media screen and (max-width: 1024px) {
+        max-width: unset;
+        width: 100%;
+      }
+
+      //Mobile media scss
+      @media screen and (max-width: 767px) {
+      }
+
+      h2 {
+        color: #333;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: normal;
+        text-align: left;
+        margin-bottom: 25px;
+        margin-top: 141px;
+
+        //Tablet media scss
+        @media screen and (max-width: 1024px) {
+          font-size: 24px;
+          margin-left: 30px;
+          text-align: center;
+          justify-self: center;
+          margin-top: 100px;
+        }
+
+        //Mobile media scss
+        @media screen and (max-width: 767px) {
+        }
+      }
+
+      p {
+        color: #2c2c2c;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.11px;
+        text-align: left;
+
+        //Tablet media scss
+        @media screen and (max-width: 1024px) {
+          font-size: 14px;
+          margin-left: 30px;
+          text-align: center;
+          margin-left: 30px;
+          margin-right: 30px;
+        }
+
+        //Mobile media scss
+        @media screen and (max-width: 767px) {
+        }
+      }
+    }
+  }
+  .image-wrapper2 {
+    margin-left: 30px;
+    margin-top: 51px;
+
+    //Tablet and Mobile media scss
+    @media screen and (max-width: 1024px) {
+      margin-left: 0px;
+    }
+
+    img {
+      width: 100%;
+
+      //Tablet and Mobile media scss
+      @media screen and (max-width: 1024px) {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+      }
+    }
+  }
+}

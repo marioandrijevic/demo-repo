@@ -1,0 +1,153 @@
+// What do we do
+
+.what-do-we-do {
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+  display: absolute;
+  margin-bottom: 96px;
+  padding-top: 48px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 40px;
+  }
+
+  .title3 {
+    margin-bottom: 50px;
+
+    h2 {
+      margin-bottom: 17px;
+      padding-top: 25px;
+      color: #2c2c2c;
+      text-align: center;
+      justify-content: center;
+      font-weight: 400;
+      line-height: 39px;
+      font-size: 33px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 5px;
+        background: linear-gradient(
+          225deg,
+          rgba(245, 93, 35, 1) 0%,
+          rgba(159, 4, 27, 1) 100%
+        );
+      }
+    }
+
+    p {
+      initial-letter: -0, 1px;
+      color: #2c2c2c;
+      padding: 0px 70px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24.88px;
+      max-width: 604px;
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  .what-wraper {
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+    border-top: 1px solid rgba($color: #000000, $alpha: 0.1);
+    max-width: 1170px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+
+    // Mobile media scss
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .content-wrapper {
+      width: calc(100% / 3);
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 50px 52px 64px;
+      transition: 0.3s;
+      position: relative;
+
+      @media screen and (max-width: 1024px) {
+        width: 100%;
+        padding: 30px 20px;
+      }
+
+      // Mobile media scss
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+      }
+
+      .image-wrapper {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 21px;
+
+        .visible {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+        .nonvisible {
+          display: none;
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      h3 {
+        margin-bottom: 23px;
+      }
+    }
+
+    @media screen and (min-width: 1025px) {
+      .content-wrapper:hover {
+        width: 430px;
+        box-shadow: 0 0 35px 0 rgba($color: #000000, $alpha: 0.22);
+
+        .visible {
+          display: none;
+        }
+
+        .nonvisible {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+
+        &::after {
+          background: linear-gradient(
+            225deg,
+            rgba(245, 93, 35, 1) 0%,
+            rgba(159, 4, 27, 1) 100%
+          );
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+// Meet the team OM OSS
+
+.meet-the-team {
+  max-width: 1170px;
+  margin: auto;
+  padding-top: 34px;
+
+  .grid-meet {
+    .text-wrapper3 {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 66px;
+
+      // Mobile media css
+      @media screen and (max-width: 1200px) {
+        padding: 0 30px;
+      }
+      // Mobile media css
+      @media screen and (max-width: 767px) {
+        padding: 0 30px;
+      }
+
+      h2 {
+        font-weight: 700;
+        font-size: 32px;
+        letter-spacing: normal;
+        line-height: 64px;
+        color: #2c2c2c;
+
+        // Mobile media css
+        @media screen and (max-width: 767px) {
+          font-size: 24px;
+        }
+      }
+
+      p {
+        margin: auto;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        letter-spacing: normal;
+        color: #2c2c2c;
+
+        // Mobile media css
+        @media screen and (max-width: 767px) {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .worker-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0px 28px;
+      padding-bottom: 87px;
+
+      .worker {
+        gap: 0px 28px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 271px;
+        height: auto;
+        border: 1px solid #e4e4e4;
+        box-shadow: 0px 0px 12px rgba(44, 44, 44, 0.33);
+        margin-bottom: 15px;
+
+        img {
+          width: 271px;
+          height: 170px;
+        }
+
+        p {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: normal;
+          align-items: center;
+          color: #2c2c2c;
+          text-align: center;
+        }
+
+        span {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          letter-spacing: normal;
+          color: #878686;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

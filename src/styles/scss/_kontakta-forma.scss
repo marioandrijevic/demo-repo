@@ -1,0 +1,198 @@
+// Kontakta form scss
+
+.kontakt-forma {
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  padding-top: 75px;
+  color: #fbfbfb;
+
+  @media screen and (min-width: 1025px) and (max-width: 1200px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  // Tablet media css
+  @media screen and (max-width: 1024px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  // Mobile media css
+  @media screen and (max-width: 767px) {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+  }
+
+  .kontakta-grid {
+    padding-bottom: 37px;
+    max-width: 1170px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 30px;
+
+    // Mobile media css
+    @media screen and (max-width: 767px) {
+      grid-gap: 0;
+    }
+
+    .text-wrapper6 {
+      grid-column: 2/6;
+
+      // Mobile media css
+      @media screen and (max-width: 767px) {
+        grid-column: 1/13;
+        padding-bottom: 30px;
+      }
+
+      .paragraph {
+        color: #878686;
+      }
+
+      h2 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 25.88px;
+        letter-spacing: -0.8px;
+        text-align: left;
+        color: #2c2c2c;
+        margin-bottom: 13px;
+      }
+
+      .sub-title {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 31px;
+        letter-spacing: normal;
+        text-align: left;
+        color: #f55d23;
+        margin-bottom: 48px;
+      }
+
+      .location-wrapper-contact,
+      .phone-wrapper-contact,
+      .mail-wrapper-contact {
+        display: flex;
+        gap: 20px;
+
+        p {
+          max-width: 281px;
+          width: 100%;
+        }
+      }
+
+      .location-wrapper-contact {
+        margin-bottom: 38px;
+
+        img {
+          height: fit-content;
+        }
+      }
+
+      .phone-wrapper-contact {
+        margin-bottom: 49px;
+      }
+    }
+
+    .kontakt-form {
+      grid-column: 6/12;
+
+      // Mobile media css
+      @media screen and (max-width: 767px) {
+        grid-column: 1/13;
+      }
+
+      h3 {
+        max-width: 370px;
+        font-weight: 400px;
+        font-size: 18px;
+        line-height: 31px;
+        letter-spacing: normal;
+        text-align: left;
+        color: #878686;
+        margin-bottom: 8px;
+        border-radius: 4px solid;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+
+        .name-email-wrapper {
+          display: flex;
+          gap: 19px;
+          justify-content: space-between;
+          margin-bottom: 16px;
+          // Mobile media css
+          @media screen and (max-width: 767px) {
+            flex-direction: column;
+          }
+
+          .name,
+          .email {
+            width: 100%;
+            max-width: 276px;
+            border: none;
+            padding: 20px 17px;
+
+            // Mobile media css
+            @media screen and (max-width: 767px) {
+              max-width: unset;
+              width: 100%;
+              padding: 5px 17px;
+            }
+          }
+        }
+
+        .name-email-wrapper .name,
+        .name-email-wrapper .email,
+        .message {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+          color: #878686;
+          border: none;
+          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.22);
+        }
+
+        .message {
+          width: 100%;
+          margin-bottom: 17px;
+          padding-top: 46px;
+          padding-left: 17px;
+          // Mobile media css
+          @media screen and (max-width: 767px) {
+            max-width: unset;
+            width: 100%;
+          }
+        }
+
+        .submit {
+          max-width: 270px;
+          width: 100%;
+          font-size: 12px;
+          font-weight: 400;
+          text-transform: uppercase;
+          padding: 22px 16px;
+          background-color: #2c2c2c;
+          color: #ffff;
+          font-size: 12px;
+          line-height: 15px;
+          margin-left: auto;
+          border-style: none;
+          border-radius: 5px;
+          cursor: pointer;
+
+          // Mobile media css
+          @media screen and (max-width: 767px) {
+            max-width: unset;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

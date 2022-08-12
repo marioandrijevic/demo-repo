@@ -1,0 +1,210 @@
+// Content wrapper for services
+
+.content-cta-wraper {
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+  padding-top: 30px;
+
+  .grid-wrapper {
+    max-width: 1170px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 30px;
+    margin: auto;
+
+    @media screen and (min-width: 1025px) and (max-width: 1200px) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    // Tablet media css
+    @media screen and (max-width: 1024px) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    // Mobile media css
+    @media screen and (max-width: 767px) {
+      padding-left: 30px;
+      padding-right: 30px;
+      grid-gap: 0;
+    }
+
+    .text-wrapper {
+      grid-column: 1/7;
+      margin-top: 35px;
+
+      // Mobile media css
+      @media screen and (max-width: 767px) {
+        grid-column: 1/13;
+      }
+
+      span {
+        display: block;
+        max-width: 371px;
+        grid-column: 1/4;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.22px;
+        text-align: left;
+        color: #f55d23;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: normal;
+        text-align: left;
+        color: #333333;
+        margin-bottom: 22px;
+      }
+
+      p {
+        grid-column: 1/7;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.11px;
+        text-align: left;
+        color: #2c2c2c;
+        margin-bottom: 119px;
+
+        //Mobile media css
+        @media screen and(max-width:767px) {
+          margin-bottom: 0;
+        }
+      }
+    }
+    img {
+      width: 100%;
+      height: auto;
+      grid-column: 7/13;
+      // Tablet media css
+      @media screen and (max-width: 1024px) {
+        object-fit: contain;
+        min-height: 320px;
+        height: auto;
+      }
+
+      // Mobile media css
+      @media screen and (max-width: 767px) {
+        min-height: 320px;
+        grid-column: 1/13;
+      }
+    }
+  }
+
+  .cta-left {
+    grid-column: 1/7;
+
+    // Mobile media css
+    @media screen and (max-width: 767px) {
+      grid-column: 1/13;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 36px;
+      letter-spacing: normal;
+      text-align: left;
+      color: #333333;
+      margin-bottom: 22px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: -0.1px;
+      align-items: left;
+      color: #2c2c2c;
+      margin-bottom: 29px;
+    }
+
+    h3 {
+      font-weight: 500;
+      font-style: italic;
+      font-size: 22px;
+      line-height: 28px;
+      letter-spacing: -0.14px;
+      text-align: left;
+      color: #f55d23;
+      margin-bottom: 21px;
+    }
+  }
+
+  .cta-right {
+    grid-column: 7/13;
+
+    //Mobile media css
+    @media screen and(max-width:767px) {
+      grid-column: 1/13;
+    }
+
+    .border-wrapper {
+      border: 1px solid #e4e4e4;
+      padding-left: 16px;
+      margin-bottom: 20px;
+
+      span {
+        display: block;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: normal;
+        text-align: left;
+        color: #878686;
+        margin-bottom: 23px;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: normal;
+        align-items: left;
+        color: #878686;
+        margin-bottom: 29px;
+      }
+      h3 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: normal;
+        text-align: left;
+        color: #2c2c2c;
+        margin-bottom: 27px;
+      }
+    }
+
+    .info {
+      p {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: normal;
+        text-align: left;
+        color: #878686;
+        max-width: 570px;
+        border: 1px solid #e4e4e4;
+        padding-top: 19px;
+        padding-bottom: 21px;
+        padding-left: 16px;
+        margin-bottom: 20px;
+
+        //Mobile media css
+        @media screen and(max-width:767px) {
+          max-width: unset;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
